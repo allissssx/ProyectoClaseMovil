@@ -25,14 +25,10 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'column-reverse',
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
   },
   buttonsContainer:{
-    flex: 1,
-    flexDirection: 'column-reverse',
     padding: 15,
     backgroundColor: 'pink'
   }
