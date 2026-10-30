@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import CustomButton from './components/CustomButton';
+import Encabezado from './components/Encabezado';
 
 export default function App() {
 
@@ -13,23 +14,16 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <View style ={styles.buttonsContainer}>
-          <CustomButton title = "My App Button 1" onPress={handleOnPressPrimaryButton}/>
-          <CustomButton title = "My App Button 2" onPress={handleOnPressSecondaryButton}/>
-      </View>
+    <View style={styles.container}> 
+        <Encabezado titulo= "Mi rutina de hoy" subtitulo="Lunes · Tren superior"/>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     alignItems: 'center',
-  },
-  buttonsContainer:{
-    padding: 15,
-    backgroundColor: 'pink'
+    margin: 30
   }
 });
