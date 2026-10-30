@@ -8,13 +8,15 @@ export default function App() {
 
   return (
     <View style={styles.container}> 
-        <Encabezado titulo= "Mi rutina de hoy" subtitulo="Lunes · Tren superior"/>
+      <Encabezado titulo= "Mi rutina de hoy" subtitulo="Lunes · Tren superior"/>
 
-      <View style={styles.filaEstadisticas}>
+      <View style={styles.ContainerEstadisticas}>
         <CajaEstadistica valor= "4" etiqueta="ejercicios"/>
-        <CajaEstadistica valor= "4" etiqueta="ejercicios"/>
-        <CajaEstadistica valor= "4" etiqueta="ejercicios"/>
+        <CajaEstadistica valor= "45" etiqueta="minutos"/>
+        <CajaEstadistica valor= "320" etiqueta="kcal"/>
       </View>
+
+      <Encabezado titulo= "Ejercicios"/>
 
     </View>
 
@@ -29,8 +31,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
 
-  filaEstadisticas: {
-    marginTop: 10,
+  ContainerEstadisticas: {
+    marginTop: 15,
+    marginBottom: 15,
     flexDirection: 'row',
     gap: 5
   },

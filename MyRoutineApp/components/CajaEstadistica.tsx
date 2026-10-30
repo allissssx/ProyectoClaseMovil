@@ -17,21 +17,22 @@ export default function CajaEstadistica({valor, etiqueta}: CajaEstadisticaProps)
 
 const styles = StyleSheet.create({
     valor:{
-        color: '#032a5c',
-        fontSize: 30,
+        color: '#4c035c',
+        fontSize: 20,
         textAlign: 'center',
+        fontWeight: 'bold'
     },
 
     etiqueta:{
         color: 'white',
-        fontSize: 10,
+        fontSize: 15,
         textAlign: 'center',
         paddingVertical: 5,
     },
 
     container:{
         flex: 1,
-        backgroundColor: '#9fc4f3',
+        backgroundColor: '#c69ff3',
         borderColor: 'black',
         borderRadius: 20,
         justifyContent: 'center',
