@@ -3,7 +3,7 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 import CustomButton from './components/CustomButton';
 import Encabezado from './components/Encabezado';
 import CajaEstadistica from './components/CajaEstadistica';
-import Etiqueta from './components/Etiqueta';
+import TarjetaEjercicio from './components/TarjetaEjercicio';
 
 export default function App() {
 
@@ -18,7 +18,11 @@ export default function App() {
       </View>
 
       <Encabezado titulo= "Ejercicios"/>
-      
+
+      <View>
+        <TarjetaEjercicio nombre="Press de banca" series={4} repeticiones={10} grupoMuscular="pecho" />
+      </View>
+
     </View>
 
     
