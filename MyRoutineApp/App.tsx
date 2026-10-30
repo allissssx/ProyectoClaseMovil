@@ -22,7 +22,7 @@ export default function App() {
       <View>
         <TarjetaEjercicio nombre="Press de banca" series={4} repeticiones={10} grupoMuscular="pecho" />
         <TarjetaEjercicio nombre="Remo con barra" series={4} repeticiones={12} grupoMuscular="espalda" destacado= {true} />
-        <TarjetaEjercicio nombre="Curl de bicep con barra Z" series={4} repeticiones={12} grupoMuscular="brazo" />
+        <TarjetaEjercicio nombre="Curl de bicep" series={4} repeticiones={12} grupoMuscular="brazo" />
         <TarjetaEjercicio nombre="Extension de tricep" series={4} repeticiones={12} grupoMuscular="brazo" />
       </View>
 
