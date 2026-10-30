@@ -17,14 +17,14 @@ export default function Etiqueta({texto, colorFondo}: EtiqueraProps){
 const styles = StyleSheet.create({
     etiqueta:{
         alignSelf: 'flex-start',
-        padding: 10,
+        padding: 5,
         paddingHorizontal: 15,
-        borderRadius: 50,
+        borderRadius: 70,
     },
 
     texto:{
         color: 'white',
-        fontSize: 15,
+        fontSize: 13,
         textAlign: 'center',
         paddingVertical: 5,
         textTransform: 'uppercase',
