@@ -32,9 +32,7 @@ const styles = StyleSheet.create({
     },
 
     encabezado:{
-        padding: 20,
-        backgroundColor: '#9fc4f3',
-        borderRadius: 20
+        
     }
 }
 )

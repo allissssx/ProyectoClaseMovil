@@ -22,8 +22,11 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
     alignItems: 'center',
-    margin: 30
+    margin: 20,
+    marginTop: 40,
+    padding: 20,
+    backgroundColor: '#9fc4f3',
+    borderRadius: 20
   }
 });
