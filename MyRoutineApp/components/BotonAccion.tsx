@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     },
 
     principal:{
-        backgroundColor: 'blue'
+        backgroundColor: '#84b9ff'
     },
 
     alternativa:{

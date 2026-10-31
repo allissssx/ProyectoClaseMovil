@@ -1,27 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View } from 'react-native';
-import CustomButton from './components/CustomButton';
+import { Button, ScrollView, StyleSheet, Text, View } from 'react-native';
 import BotonAccion from './components/BotonAccion';
+import TarjetaProducto from './components/TarjetaProducto';
+import {Producto} from "./components/Productos";
+import {productos} from "./components/Productos";
+
+const formatearPrecio = (precio: number): string => {
+  return `L ${precio.toFixed(2)}`;
+};
 
 export default function App() {
 
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <View style ={styles.buttonsContainer}>
-          <BotonAccion texto="boton" onPress={() =>{}} Apariencia='alternativa'  />
-      </View>
-    </View>
+    <ScrollView style={styles.comtainer}>
+
+    {productos.map((producto) => {
+
+      const precioFinal = producto.descuento ? producto.precio * (1 - producto.descuento / 100) : producto.precio;
+
+      return (
+        <TarjetaProducto producto={producto} onAgregar={() => {}} formatearPrecio={formatearPrecio} precioFinal={precioFinal}/>
+      );
+    })}
+
+  </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#fff',
-    alignItems: 'center',
-  },
-  buttonsContainer:{
-    padding: 15,
-    backgroundColor: 'pink'
+  comtainer:{
+    padding: 20,
+    paddingTop: 50
   }
 });
