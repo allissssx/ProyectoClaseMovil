@@ -3,6 +3,7 @@ import BotonAccion from './components/BotonAccion';
 import TarjetaProducto from './components/TarjetaProducto';
 import {Producto} from "./components/Productos";
 import {productos} from "./components/Productos";
+import EncabezadoSeccion from './components/EncabezadoSeccion';
 
 const formatearPrecio = (precio: number): string => {
   return `L ${precio.toFixed(2)}`;
@@ -12,6 +13,7 @@ export default function App() {
 
   return (
     <ScrollView style={styles.comtainer}>
+      <EncabezadoSeccion titulo="Menú del día" cantidad={productos.length} onVerTodo={() => {}}/>
 
     {productos.map((producto) => {
 
