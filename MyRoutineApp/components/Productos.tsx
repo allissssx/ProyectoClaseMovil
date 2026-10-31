@@ -1,7 +1,7 @@
 export type CategoriaProducto =
-    | "bebida"
-    | "comida"
-    | "postre";
+    | "Bebida"
+    | "Comida"
+    | "Postre";
 
 export type DisponibilidadProducto =
     | "disponible"
@@ -22,15 +22,15 @@ export const productos: Producto[] = [
     {
         id: "1",
         nombre: "Cafe americano",
-        categoria: "bebida",
+        categoria: "Bebida",
         precio: 35,
         disponibilidad: "disponible"
     },
-    
+
     {
         id: "2",
         nombre: "Licuado de fresa",
-        categoria: "bebida",
+        categoria: "Bebida",
         precio: 55,
         disponibilidad: "pocasUnidades",
         nuevo: true
@@ -39,7 +39,7 @@ export const productos: Producto[] = [
     {
         id: "3",
         nombre: "Empanada de queso",
-        categoria: "comida",
+        categoria: "Comida",
         precio: 30,
         disponibilidad: "disponible",
         descuento: 10
@@ -48,7 +48,7 @@ export const productos: Producto[] = [
     {
         id: "4",
         nombre: "Sandwich de pollo",
-        categoria: "comida",
+        categoria: "Comida",
         precio: 75,
         disponibilidad: "agotado"
     },
@@ -56,7 +56,7 @@ export const productos: Producto[] = [
     {
         id: "5",
         nombre: "Pastel de chocolate",
-        categoria: "postre",
+        categoria: "Postre",
         precio: 45,
         disponibilidad: "pocasUnidades",
         descuento: 20
@@ -65,7 +65,7 @@ export const productos: Producto[] = [
     {
         id: "6",
         nombre: "Galleta de avena",
-        categoria: "postre",
+        categoria: "Postre",
         precio: 20,
         disponibilidad: "disponible",
         nuevo: true
