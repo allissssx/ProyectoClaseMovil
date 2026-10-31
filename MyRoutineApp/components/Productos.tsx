@@ -1,14 +1,14 @@
-type CategoriaProducto =
+export type CategoriaProducto =
     | "bebida"
     | "comida"
     | "postre";
 
-type DisponibilidadProducto =
+export type DisponibilidadProducto =
     | "disponible"
     | "pocasUnidades"
     | "agotado";
 
-type Producto = {
+export type Producto = {
     id: string;
     nombre: string;
     categoria: CategoriaProducto;
@@ -18,7 +18,7 @@ type Producto = {
     nuevo?: boolean;
 };
 
-const productos: Producto[] = [
+export const productos: Producto[] = [
     {
         id: "1",
         nombre: "Cafe americano",
@@ -26,6 +26,7 @@ const productos: Producto[] = [
         precio: 35,
         disponibilidad: "disponible"
     },
+    
     {
         id: "2",
         nombre: "Licuado de fresa",
@@ -34,6 +35,7 @@ const productos: Producto[] = [
         disponibilidad: "pocasUnidades",
         nuevo: true
     },
+
     {
         id: "3",
         nombre: "Empanada de queso",
@@ -42,6 +44,7 @@ const productos: Producto[] = [
         disponibilidad: "disponible",
         descuento: 10
     },
+
     {
         id: "4",
         nombre: "Sandwich de pollo",
@@ -49,6 +52,7 @@ const productos: Producto[] = [
         precio: 75,
         disponibilidad: "agotado"
     },
+
     {
         id: "5",
         nombre: "Pastel de chocolate",
@@ -57,6 +61,7 @@ const productos: Producto[] = [
         disponibilidad: "pocasUnidades",
         descuento: 20
     },
+
     {
         id: "6",
         nombre: "Galleta de avena",

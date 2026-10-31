@@ -1,8 +1,12 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import {Producto} from "./Productos";
 
 
 type TarjetaProductoProps = {
-    
+    producto: Producto;
+    onAgregar: () => void;
+    textoBoton?: string;
+    precioFinal: number;
 }
 
 
