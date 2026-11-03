@@ -16,8 +16,8 @@ export default function App() {
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
       <View style ={styles.buttonsContainer}>
-          <CustomButton title = "My App Button 1" onPress={handleOnPressPrimaryButton}/>
-          <CustomButton title = "My App Button 2" onPress={handleOnPressSecondaryButton}/>
+          <CustomButton title = "My App Button 1" onPressButton={handleOnPressPrimaryButton}/>
+          <CustomButton title = "My App Button 2" onPressButton={handleOnPressSecondaryButton}/>
       </View>
     </View>
   );
