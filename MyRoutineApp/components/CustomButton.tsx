@@ -1,18 +1,14 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-
-type CustomButtonProps = {
-    title: string;
-    onPress: ()=> void;
-    variant?: "primary" | "secondary" | "tertiary"
-}
+import { Pressable, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { CustomButtonProps } from "../utils/types/ButtonProps";
 
 
-export default function CustomButton({title, onPress, variant}: CustomButtonProps){
+
+export default function CustomButton({title, onPressButton, variant}: CustomButtonProps){
 
     return(
-        <TouchableOpacity style={styles.button} onPress={onPress}>
+        <Pressable style={styles.button} onPress={onPressButton}>
             <Text style={styles.buttonText}>{title}</Text>
-        </TouchableOpacity>
+        </Pressable>
     )
 }
 
