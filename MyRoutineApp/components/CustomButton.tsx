@@ -1,5 +1,5 @@
 import { Pressable, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { CustomButtonProps } from "../utils/types/ButtonProps";
+import { CustomButtonProps, CustomButtonVariant } from "../utils/types/ButtonProps";
 
 
 
