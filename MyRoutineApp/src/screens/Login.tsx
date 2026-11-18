@@ -9,7 +9,7 @@ export default function Login ({navigation} : any){
         const [email, setEmail] = useState("");
         const [password, setPassword] = useState("");
 
-         const handleOnPressLogIn = () => {
+        const handleOnPressLogIn = () => {
             navigation.navigate("HomeScreen", {email});
         }
 
@@ -36,7 +36,7 @@ export default function Login ({navigation} : any){
         type='password'
         />
       <View style ={styles.buttonsContainer}>
-          <  <CustomButton title = "Log In" onPressButton={handleOnPressLogIn} />
+          <CustomButton title = "Log In" onPressButton={handleOnPressLogIn} />
           <CustomButton title = "Sign Up" onPressButton={handleOnPressSignUp} variant='secondary'/>
           <CustomButton title = "Forgot your password?" onPressButton={handleOnPressForgotPwd} variant='tertiary' disabled />
       </View>
