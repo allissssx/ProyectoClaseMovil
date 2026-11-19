@@ -2,6 +2,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Login from '../screens/Login';
 import Register from '../screens/Register';
 import Home from '../screens/Home';
+import TabsNavigator from './TabsNavigator';
 
 //1. declarar tipado: pantallas junto con sus parametros
 export type RootStackParamList ={
@@ -33,9 +34,10 @@ export default function StackNavigator(){
 
             <Stack.Screen
                 name="HomeScreen"
-                component={Home}
+                component={TabsNavigator}
                 options={{title: "Home"}}
             />
+
         </Stack.Navigator>
     );
 }
