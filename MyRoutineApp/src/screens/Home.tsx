@@ -1,15 +1,13 @@
 import { NativeStackScreenProps } from "@react-navigation/native-stack"
 import { View,Text } from "react-native"
 import { RootStackParamList } from "../navigation/StackNavigator"
+import { TabsList } from "../navigation/TabsNavigator";
 
-// type props = {email: string};
-type props = NativeStackScreenProps <RootStackParamList, 'HomeScreen'>;
+export default function Home(){
 
-export default function Home({route}: props){
-    const {email} = route.params;
     return(
         <View>
-            <Text>Welcome home, {email} </Text>
+            <Text>Welcome home </Text>
         </View>
     )
 }
