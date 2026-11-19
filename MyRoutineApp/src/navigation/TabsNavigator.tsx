@@ -10,9 +10,9 @@ import { Ionicons } from '@expo/vector-icons';
 
 
 export type TabsList ={
-    HomeScreen: {email: string},
-    ProfileScreen: undefined,
-    SettingsScreen: undefined
+    Home: {email: string},
+    Profile: undefined,
+    Settings: undefined
 }
 
 const Tabs = createBottomTabNavigator<TabsList>();
@@ -22,7 +22,7 @@ export default function TabsNavigator(){
         <Tabs.Navigator >
             
         <Tabs.Screen
-        name="HomeScreen"
+        name="Home"
         component={Home}
         options={{
           tabBarIcon: () => (
@@ -34,12 +34,26 @@ export default function TabsNavigator(){
       />
 
         <Tabs.Screen
-        name="ProfileScreen"
-        component={Profile}/>
+        name="Profile"
+        component={Profile}
+        options={{
+          tabBarIcon: () => (
+            <Ionicons
+              name={'person'}
+              size={25}
+              color={"blue"}/>),
+            }}/>
 
         <Tabs.Screen
-        name="SettingsScreen"
-        component={Settings}/>
+        name="Settings"
+        component={Settings}
+        options={{
+          tabBarIcon: () => (
+            <Ionicons
+              name={'settings'}
+              size={25}
+              color={"blue"}/>),
+            }}/>
         </Tabs.Navigator>
     );
 }
